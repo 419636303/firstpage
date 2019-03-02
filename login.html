@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>1药网登陆</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+   
+</head>
+<script src="js/jquery-3.3.1.js"></script>
+<link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
+
+<body>
+    <div class="top">
+        <a href="#">
+            <img src="img/yao_logo.png" alt="">
+        </a>
+    </div>
+    <div class="main">
+        <div class="main_r">
+            <div class="loginway">
+                <div class="wrap_ptdl">
+                    <p class="active">普通登录</p>
+                </div>
+                <div class="wrap_sjdl">
+                    <p>手机登陆</p>
+                </div>
+            </div>
+            <div class="zc">
+                Hi，欢迎登录！
+                <span>还不是1药网会员？<a href="register.html">免费注册</a> </span>
+            </div>
+            <form class="form1" action="" autocomplete="off">
+               <div>
+                    <input type="text" placeholder="邮箱/手机/用户名" class="usn">
+               </div> 
+               <div>
+                    <input type="password" placeholder="等路密码" class="psw">
+                    <a href="#">忘记密码？</a>
+                </div>
+               <article>
+                 <input type="text" placeholder="验证码">  
+    
+               </article>
+               <article>
+                <label class="checkbox"><input type="checkbox" value="1" name="rememberPwd" id="rememberPwd" tabindex="-1">
+                    <span class="two_week">两周内免登录</span>
+                </label>
+                <input type="button" id="btn" value="登陆">
+               </article>
+            </form>
+            <form class="form2" action="">
+               <p><input type="text"></p>
+               <p><input type="password"></p>
+               <p><input type="button" value="denglu" name="" id=""></p>
+            </form>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/cookie.js"></script>
+</body>
+</html>

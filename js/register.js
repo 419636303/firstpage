@@ -1,0 +1,57 @@
+//正则表达式（用户名）
+$(function(){
+	$(".usn").on("change",function(){
+        console.log('aa')
+		var reg = /^[a-z0-9A-Z]{5,}$/;
+		if(!reg.test($(".usn").val())){
+			$(".usn_tip").html("格式错误");
+		}else{
+			$(".usn_tip").html("");
+		}
+	})
+})
+//正则表达式（邮箱）
+$(function(){
+	$(".eml").on("change",function(){
+		var reg = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		if(!reg.test($(".eml").val())){
+			$(".eml_tip").html("邮箱格式错误");
+		}else{
+			$(".eml_tip").html("");
+		}
+	})
+})
+//用户名验证
+$(function(){
+	$(".usn").on("blur",function(){
+		$.get("http://47.104.244.134:8080/username.do",{username:$(this).val()},function(res){
+            console.log(res)
+			if(res.msg=="失败"){
+				console.log("用户名可用");
+			}else{
+				console.log("不可用");
+			}
+		})
+	})
+})
+//邮箱验证
+$(function(){
+	$(".eml").on("blur",function(){
+		$.get("http://47.104.244.134:8080/useremail.do",{email:$(this).val()},function(res){
+			if(res.msg=="失败"){
+				console.log("邮箱可用");
+			}else{
+				console.log("不可用");
+			}
+		})
+	})
+})
+//注册
+$(function(){
+	$("#btn").on("click",function(){
+		$.post("http://47.104.244.134:8080/usersave.do",{"username":$(".usn").val(),"password":$(".psw").val(),"email":$(".eml").val(),"sex":"女"},function(res){
+			console.log(res);		
+		})
+	})
+
+})

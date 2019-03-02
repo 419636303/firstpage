@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0
+}
+.top{
+    margin: 0 auto;
+    width: 990px;
+    height: 98px;
+}
+.main{
+    width: 990px;
+    height: 464px;
+    border: #e6e6e6 1px solid;
+    border-top: #0083ce 2px solid;
+    box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+    margin: 0 auto;
+    background: url(../img/l_bg_02.png) no-repeat
+}
+
+
+.main_r{
+    width: 430px;
+    min-height: 335px;
+    float: right;
+    position: relative
+}
+.loginway{
+    width: 430px;
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.loginway div{
+    float: left;
+    width: 214px;
+    height: 24px;
+    line-height:24px;
+    font-size: 14px;
+    margin-top: 13px;
+    text-align: center;
+    color: #5e5e5e;
+}
+.loginway div p{
+    width: 154px;
+    height: 34px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.loginway div:first-child{
+    border-right: 1px solid #e5e5e5
+}
+.active{
+    border-bottom: #0083ce 2px solid;
+    color: #0083ce
+}
+.zc{
+    margin: 0 auto;
+    width: 368px;
+    height: 20px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 16px;
+
+}
+.zc span{
+    margin-top: 5px;
+    font-size: 12px;
+    float: right;
+}
+form{
+    width: 368px;
+    height: 368px;
+    margin: 0 auto;
+    position: absolute;
+    left: 30px
+}
+form:last-of-type{
+    display: none
+}
+form div input{
+    display: block;
+    width: 286px;
+    height: 26px;
+    padding: 6px 12px 6px 40px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid #e6e6e6;
+    background: url(../img/regest.png) no-repeat 8px -114px
+}
+input:focus{
+    outline: #0083ce 1px solid 
+}
+form div{
+    width: 340px;
+    height: 68px;
+}
+form div a{
+    float: right;
+    font-size: 12px;
+    color: #5e5e5e;
+    text-decoration: none
+}
+form div:last-child input{
+    background: url(../img/regest.png) no-repeat 8px -148px
+}
+form article:first-of-type{
+    width: 340px;
+    height: 60px;
+}
+form article:first-of-type input:first-of-type{
+    width: 174px;
+    height: 40px;
+   
+    padding-left: 10px;
+}
+form article:last-of-type span{
+    display: block;
+    
+   font-size: 12px
+}
+form article:last-of-type input:last-child{
+    width: 326px;
+    height: 39px;
+    background: #0083ce;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
